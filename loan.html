@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title> loan.html >>Loan Application</title>
+<style>
+
+	
+</style>
+
+</head>
+<body>
+	<justify>
+	<h1 style="color:yellow; background:darkcyan; height:80px; line-height:70px;text-indent:10px;"><b>Welcome to Axis Credit Bank Online Loan Application Form</b></h1>
+	<form method="POST" action="loan.php" style="background:skyblue; margin-top:-21px;">
+		<font color="darkblue"><b>
+		<label style="margin-left:25px;">First Name:</label>
+		<input type="text" name="first_name" required="First name"><span style="color:red;">*</span>
+		<label style="margin-left:25px;">Last Name:</label>
+		<input type="text" name="last_name" required="Last name"><span style="color:red;">*</span>
+		<label style="margin-left:25px;">Age:</label>
+		<input type="text" name="Age" required="First Age"><span style="color:red;">*</span>
+		<br>
+		<br><label style="margin-left:25px;">Address:</b></label>
+		<br>
+		
+		<textarea name="Address" rows="10" cols="89" style="margin-left:25px;">
+			
+		</textarea>
+		<br>
+		<br>
+		<b style="margin-left:25px;">What is your current salary:</b>
+		<select name="salary" >
+			<option value=0>Under $10000</option>
+			<option  value=`10000>$10000 to $25000</option>
+			<option  value=25000>$25000 to $50000</option>
+			<option  value=50000>Over $50000</option>
+		</select>
+		<br>
+		<br>
+		<b style="margin-left:25px;">How much do you want to borrow:</b><br><br>
+		<input type="radio" name="loan" value="1,000" style="margin-left:40px;">Our $1,000 package at 8.0% interest
+		<br>
+		<input type="radio" name="loan" value="5,000" style="margin-left:40px;">Our $5,000 package at 11.5% interest
+		<br>
+		<input type="radio" name="loan" value="10,000" style="margin-left:40px;">Our $10,000 package at 25.0% interest
+		<br></font>
+		<br>
+		<center><input type="submit" value="Click here to submit application" style="font-family:cursive; font-size:18px; color:darkcyan;">
+		<input type="reset" value="Reset application form" style="font-family:cursive; font-size:18px; color:maroon;"></center>
+	
+	</form>
+	</justify>
+</body>
+</html>
