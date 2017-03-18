@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>mysite</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="jquery.cycle2.min.js"></script>
+  
+  <style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	img{
+		max-width:100%;
+	}
+	.cycle-slideshow{
+		width:100%;
+		max-width:650px;
+		display:block;
+		position:relative;
+		margin:20px auto;
+		overflow:hidden;
+		border:2px solid silver;
+	}
+	.cycle-prev, .cycle-next{
+		font-size:200%;
+		color:silver;
+		font-weight:bold;
+		display:block;
+		position:absolute;
+		
+		top:36%;
+		z-index: 9999;
+		cursor:pointer;
+		
+	}
+	.cycle-prev{
+		left:4%;
+	}
+	.cycle-next{
+		right:4%;
+	}
+	.cycle-pager{
+		width:100%;
+		position:absolute;
+		top:10px;
+		text-align:center;
+		z-index: 9999;
+		
+	}
+	.cycle-pager span{
+		text-indent:100%;
+		white-space:nowrap;
+		width:10px;
+		height:10px;
+		display:inline-block;
+		border:1px solid #999;
+		border-radius:50%;
+		margin: 0 10px;
+	}
+	.cycle-pager .cycle-pager-active{
+		background:cyan;
+	}
+  
+  </style>
+  
+</head>
+<body>
+	
+	<div class="cycle-slideshow" data-cycle-manual-speed="800" >
+		<span class="cycle-prev">&#9001</span>
+		<span class="cycle-next">&#9002</span>
+		<span class="cycle-pager"></span>
+		<img src="slide2.jpg" alt="slide ist">
+		<img src="slide4.jpg" alt="slide ist">
+		<img src="slide5.jpg" alt="slide ist">
+	
+	</div>
+	
+	
+	
+	
+	
+</body>
+</html>
